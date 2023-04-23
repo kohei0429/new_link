@@ -1,24 +1,50 @@
-# README
+## アプリケーション名
+NEW_LINK
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+音楽クラブとイベント主催者のマッチングアプリ。
 
-Things you may want to cover:
+## URL
+現段階、未実装なので最初の機能実装後、デプロイします。
 
-* Ruby version
+## テスト用アカウント
+ログイン機能が未実装段階の為、テスト用アカウントはまだありません。
 
-* System dependencies
+## 利用方法
+他ユーザーページ→ユーザーカレンダーから予定確認→決済。の流れで
+クラブと主催者のイベント契約を結べるアプリを目指します。
+他機能は、ツイート投稿、メッセージ機能、
+契約→イベント終了後の相互評価機能などを予定しています。
 
-* Configuration
+## アプリケーションを作成した背景
+自身のクラブイベント主催経験から、クラブへの連絡方法やスケジュールなどが分かりずらく、
+不便に感じたことから、便利化したいと思ったのがきっかけです。
+このアプリを通してClub & Bar の知名度&収益UP、
+アーティストのキャリアスタートの手助け、サポート。
+お客さんも巻き込んでアンダーグラウンド音楽業界の発展と貢献を目指します。
 
-* Database creation
+## 洗い出した要件
+https://docs.google.com/spreadsheets/d/1hvMeSzGqWCzsbqZYvgzUpR1mf_qeryy0KJzU3E3H4sw/edit#gid=982722306
 
-* Database initialization
+## 実装した機能についての画像やGIFおよびその説明
+現段階未実装の為、機能実装次第書き足していきます。
 
-* How to run the test suite
+## 実装予定の機能
+まずユーザー登録機能から始めていきます。
 
-* Services (job queues, cache servers, search engines, etc.)
+## DB設計
+(https://i.gyazo.com/f5a1dce8c7f5de0cf61a01b66ec7c4ff.png)
 
-* Deployment instructions
+## 画面遷移図
+(https://i.gyazo.com/1aa72a432f87d1da139adb845b9b59f5.png)
 
-* ...
+## 開発環境
+HTML・CSS・Ruby・Ruby on Rails・JavaScriptを用いての開発を予定しています。
+
+## ローカルでの動作方法
+これから実装予定です。
+
+## 工夫したポイント
+イベント開催のマッチングアプリだけに留まらず、
+"どうお客さんを巻き込んでいくか" ここが流行のキーになると考えています。
+後にクラブの他に音楽スタジオなど、契約される側の幅を増やしていきたいと考えています。
