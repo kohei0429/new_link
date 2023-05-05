@@ -57,3 +57,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+
+group :production do
+  gem 'pg'
+end
+# 本番環境（Renderでの実行時）にPostgreSQLを使用できるGem
