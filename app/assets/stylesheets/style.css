@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.header {
+  color: #FFFFFF;
+  background-color: #dc5041;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__bar_row {
+}
+
+.grid-6 {
+
+}
+
+.user_nav_grid-6 {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.grid-6 {
+}
+
+.footer {
+
+}
