@@ -11,17 +11,18 @@
   </head>
 
   <body>
+   <div class="container">
     <header class="header">
-      <div class="header__bar_row">
+      <div class="left_right_1">
         <h1 class="grid-6"><a href="/">NewLink</a></h1>
         <% if user_signed_in? %>
-          <div class="user_nav_grid-6">
+          <div class="left_right">
             <%= link_to current_user.name, users_show_path, class: :greeting__link%>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
             <%# <%= link_to "投稿する", new_tweet_path, class: "post" %>
           </div>
         <% else %>
-          <div class="grid-6">
+          <div class="left_right">
             <%= link_to "新規登録", new_user_registration_path, class: "post" %>
             <%= link_to "ログイン", new_user_session_path, class: "post" %>
           </div>
@@ -31,8 +32,9 @@
     <%= yield %>
     <footer class="footer">
       <p>
-        フッターです。Copyright NewLink 2023.
+        Reggae, Danchehall, Hiphop, R&B, Aflobeats, Ska, Rocksteday, .. Whole heap a Good Music. NewLink 2023.
       </p>
     </footer>
+   </div>
   </body>
 </html>
