@@ -36,7 +36,24 @@
   margin-top: auto;
 }
 
+
+/* トップページ */
+
 .new_link_title {
   color: #dc5041;
   text-align: center;
 }
+
+/* トップページ */
+
+/* ユーザーページ */
+
+.mypage {
+  text-align: center;
+}
+
+.pr {
+
+}
+
+/* ユーザーページ */
