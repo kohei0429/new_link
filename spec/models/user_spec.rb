@@ -1,9 +1,4 @@
 require 'rails_helper'
-<<<<<<< Updated upstream
-
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-=======
 RSpec.describe User, type: :model do
   before do
     @user = FactoryBot.build(:user)
@@ -86,5 +81,4 @@ RSpec.describe User, type: :model do
       end
     end
   end
->>>>>>> Stashed changes
 end

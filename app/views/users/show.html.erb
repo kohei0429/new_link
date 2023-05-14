@@ -1,3 +1,18 @@
-<%# ログインユーザー名表示 %>
-<h1><%= current_user.name %>のマイページ</h1>
-<h1>PR欄: <%= current_user.profire %></h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NewLink</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+  </head>
+
+<body>
+  <%# ログインユーザー名表示 %>
+<h1 class="mypage"><%= current_user.name %>のマイページ</h1>
+  <div class="pr">PR欄: <%= current_user.profire %></div>
+</body>
+</html>
