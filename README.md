@@ -5,10 +5,14 @@ NEW_LINK
 音楽クラブとイベント主催者のマッチングアプリ。
 
 ## URL
-現段階、未実装なので最初の機能実装後、デプロイします。
+https://new-link-mfwf.onrender.com
 
 ## テスト用アカウント
-ログイン機能が未実装段階の為、テスト用アカウントはまだありません。
+Basic認証ID : shibao
+Basic認証パスワード : 0429
+Name : しばおさん
+Email : shibao@gmail.com
+Password : shibao0429
 
 ## 利用方法
 他ユーザーページ→ユーザーカレンダーから予定確認→決済。の流れで
@@ -27,10 +31,13 @@ NEW_LINK
 https://docs.google.com/spreadsheets/d/1hvMeSzGqWCzsbqZYvgzUpR1mf_qeryy0KJzU3E3H4sw/edit#gid=982722306
 
 ## 実装した機能についての画像やGIFおよびその説明
-現段階未実装の為、機能実装次第書き足していきます。
+ユーザー管理機能を実装。ユーザーの登録、ログイン、ログアウトができます。
+ヘッダーの新規登録&ログインボタンからユーザー登録&ログイン可能です。
+https://i.gyazo.com/217c307a751b9756e903aa5113fd33e6.mp4
 
 ## 実装予定の機能
-まずユーザー登録機能から始めていきます。
+現在ユーザー管理機能を実装中。
+次にツイート投稿機能を実装します。
 
 ## DB設計
 (https://i.gyazo.com/f5a1dce8c7f5de0cf61a01b66ec7c4ff.png)
@@ -42,7 +49,7 @@ https://docs.google.com/spreadsheets/d/1hvMeSzGqWCzsbqZYvgzUpR1mf_qeryy0KJzU3E3H
 HTML・CSS・Ruby・Ruby on Rails・JavaScriptを用いての開発を予定しています。
 
 ## ローカルでの動作方法
-これから実装予定です。
+git clone https://github.com/kohei0429/new_link.git
 
 ## 工夫したポイント
 イベント開催のマッチングアプリだけに留まらず、
