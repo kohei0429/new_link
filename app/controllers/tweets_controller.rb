@@ -21,8 +21,9 @@ class TweetsController < ApplicationController
   def show
     @tweet = Tweet.find(params[:id])
   end
-  
+
   private
+  
   def tweet_params
     params.require(:tweet).permit(name, :image, :text)
   end
