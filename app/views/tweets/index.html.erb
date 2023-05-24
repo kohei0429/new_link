@@ -1,5 +1,4 @@
 <h1 class="new_link_title">Welcome to New Link!!!</h1>
-<div><%= link_to '新規投稿', new_tweet_path, method: :get %></div>
 <div class="contents row">
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
