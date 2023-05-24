@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :move_to_index, expect: [:index, :show]
+  before_action :move_to_index, except: [:index, :show]
   #index,showはmove_to_indexの対象から外す
   
   def index
