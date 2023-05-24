@@ -1,4 +1,7 @@
 class TweetsController < ApplicationController
+  before_action :move_to_index, expect: [:index, :show]
+  #index,showはmove_to_indexの対象から外す
+  
   def index
     @tweets = Tweet.all
     # allメソッドを使用して、tweetsテーブルすべてのレコードをインスタンス変数に代入し、ビューに受け渡す
