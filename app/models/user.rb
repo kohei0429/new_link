@@ -9,4 +9,6 @@ class User < ApplicationRecord
   
   validates :name, presence: true
   validates :profire, presence: true
+
+  has_many :tweets
 end
