@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/show'
+  get 'users/show' # マイページ
   get 'tweets/index'
   devise_for :users
   root 'tweets#index'
