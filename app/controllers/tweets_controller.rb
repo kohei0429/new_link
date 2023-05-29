@@ -3,9 +3,7 @@ class TweetsController < ApplicationController
   #index,showはmove_to_indexの対象から外す
   
   def index
-    @tweets = Tweet.all
-    # allメソッドを使用して、tweetsテーブルすべてのレコードをインスタンス変数に代入し、ビューに受け渡す
-    # この@tweetsは、ビューファイルで使用できる
+    @tweets = Tweet.includes(:user)
   end
 
   def new
