@@ -4,6 +4,7 @@ class TweetsController < ApplicationController
   
   def index
     @tweets = Tweet.includes(:user)
+    #includesメソッドを使用してN+1問題を解消
   end
 
   def new
