@@ -3,8 +3,9 @@ class TweetsController < ApplicationController
   #index,showはmove_to_indexの対象から外す
   
   def index
-    @tweets = Tweet.includes(:user)
+    @tweets = Tweet.includes(:user).order("created_at DESC")
     #includesメソッドを使用してN+1問題を解消
+    #orderメソッドを使用してツイートを新しい順に取得
   end
 
   def new
