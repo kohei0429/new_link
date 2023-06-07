@@ -3,9 +3,9 @@ class TweetsController < ApplicationController
   #index,showはmove_to_indexの対象から外す
   
   def index
-    @tweets = Tweet.all
-    # allメソッドを使用して、tweetsテーブルすべてのレコードをインスタンス変数に代入し、ビューに受け渡す
-    # この@tweetsは、ビューファイルで使用できる
+    @tweets = Tweet.includes(:user).order("created_at DESC")
+    #includesメソッドを使用してN+1問題を解消
+    #orderメソッドを使用してツイートを新しい順に取得
   end
 
   def new
@@ -28,7 +28,7 @@ class TweetsController < ApplicationController
   private
 
   def tweet_params
-    params.require(:tweet).permit(:name, :image, :text)
+    params.require(:tweet).permit(:image, :text).merge(user_id: current_user.id)
   end
   
   def move_to_index

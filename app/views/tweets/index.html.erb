@@ -8,14 +8,18 @@
           <li>
             <%= link_to '詳細', tweet_path(tweet.id), method: :get %>
           </li>
+          <% if user_signed_in? && current_user.id == tweet.user_id %>
             <li>
               <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
             </li>
+          <% end %>
         </ul>
       </div>
       <p><%= tweet.text %></p>
       <span class="name">
-        <%= tweet.name %>
+        <a href="/users/<%= tweet.user.id %>">
+          <span>投稿者</span><%= tweet.user.name %>
+        </a>
       </span>
     </div>
   <% end %>
