@@ -17,7 +17,7 @@
         <h1 class="grid-6"><a href="/">NewLink</a></h1>
         <% if user_signed_in? %>
           <div class="left_right">
-            <%= link_to current_user.name, users_show_path, class: :greeting__link%>
+            <%= link_to current_user.name, "/users/#{current_user.id}" %>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
             <%= link_to "投稿する", new_tweet_path, class: "post" %>
           </div>
