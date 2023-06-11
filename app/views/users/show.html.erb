@@ -1,4 +1,5 @@
 <div class="contents row">
+<div class="pr">PR欄: <%= user.profire %></div>
   <p><%= @name %>さんの投稿一覧</p>
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
