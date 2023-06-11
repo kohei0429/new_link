@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :tweets, only: [:index, :new, :create, :destroy, :show] do
     resources :comments, only: :create
   end
+  resources :users, only: :show
   get 'users/show' # マイページ
 end
