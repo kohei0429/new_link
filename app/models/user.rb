@@ -11,4 +11,5 @@ class User < ApplicationRecord
   validates :profire, presence: true
 
   has_many :tweets
+  has_many :comments
 end
