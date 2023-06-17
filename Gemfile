@@ -62,3 +62,6 @@ group :production do
   gem 'pg'
 end
 # 本番環境（Renderでの実行時）にPostgreSQLを使用できるGem
+
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
